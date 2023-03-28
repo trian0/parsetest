@@ -10,8 +10,8 @@ class App : Application() {
         super.onCreate()
         Parse.initialize(
             Parse.Configuration.Builder(this)
-                .applicationId("qawsedrftg123")
-                .clientKey("KEYTHALES")
+                .applicationId("123QWE")
+                .clientKey("KEY")
                 .server("http://localhost:1337/parse")
                 .build()
         )

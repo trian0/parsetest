@@ -15,12 +15,12 @@ class MainActivity : AppCompatActivity() {
 
         saveButton.setOnClickListener {
             val gameScore = ParseObject("GameScore")
-                gameScore.put("score", 1337)
-                gameScore.put("playerName", "Sean Plott")
-                gameScore.put("cheatMode", false)
-                gameScore.saveInBackground {
-                    Log.d("DEBUG", "Game Score saved, id: " + gameScore.get("score"))
-                }
+            gameScore.put("score", 1337)
+            gameScore.put("playerName", "Sean Plott")
+            gameScore.put("cheatMode", false)
+            gameScore.saveInBackground {
+                Log.d("DEBUG", "Game Score saved, id: " + gameScore.get("score"))
+            }
         }
     }
 }
